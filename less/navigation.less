@@ -1,1 +1,39 @@
 // Navigation code here
+
+.spacenav {
+    width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: @nav-bg;
+        
+        &:hover{
+            .gradient;
+        }
+    .navdiv {
+        margin-top: 1%;
+        h1 {
+            display: flex;
+            justify-content: center;
+            font-size: 4.5rem;
+            margin-bottom: 4%;
+            color: @ebony-clay;
+        } // closes h1
+
+        ul li{
+           width: 400px;
+           display: flex;
+           flex-direction: row;
+           justify-content: space-between;
+           font-size: 2rem;
+           margin-bottom: 3%;
+
+           a {
+               text-decoration: none;
+               color: @ebony-clay;
+
+               
+           }
+        } // closes ul
+    } // closes navdiv
+} // closes spacenav

@@ -1,1 +1,46 @@
 // Mixins Here
+
+.hideimage() {
+    display: none;
+}
+
+.gradient(){
+    background: linear-gradient(270deg, #eeff04, #0c26b4);
+background-size: 400% 400%;
+
+-webkit-animation: AnimationName 30s ease infinite;
+-moz-animation: AnimationName 30s ease infinite;
+animation: AnimationName 30s ease infinite;
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 13%}
+    50%{background-position:100% 88%}
+    100%{background-position:0% 13%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 13%}
+    50%{background-position:100% 88%}
+    100%{background-position:0% 13%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 13%}
+    50%{background-position:100% 88%}
+    100%{background-position:0% 13%}
+}
+}
+
+.hovermixin(@bg-color, @font-color) {
+    background-color: @bg-color;
+    color: @font-color;
+}
+
+.signup(@bg-color, @fontcolor){
+    background-color: @bg-color;
+    color: @fontcolor;
+    border: solid black .5px;
+    border-radius: 4px;
+    font-size: 2rem;
+    text-align: center;
+    padding: 1.5% 0;
+    width: 35%;
+}

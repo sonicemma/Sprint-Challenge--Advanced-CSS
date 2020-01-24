@@ -34,13 +34,30 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+Responsive websites use media queries, which change the layout based
+on the target device of the user, like mobile or tablet. This allows
+the designer to change the layout on the site based on the width
+of the browser.
+
+Adaptive websites are less flexible, in that there are multiple layout designs for different screen sizes. Depending on what device the user is using and their screen size, a different layout will display. This is less flexible than responsive design.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+Mobile first is designing your website to look good on a mobile phone first. With desktop first, you scale your website down for mobile, so the inverse is scaling up with mobile first.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+The default browser font size is usually 16 pixels. Someone can set their browser font size manually. If you were to use pixels, then the website's font size would not scale if that person would look at your side. REM lets you set your font size according to the font size in the root HTML element. 1 rem can be calculated at around 10px. 62.5% percent of 16 is 10. So, if the root element had its font size set to 62.5 percent, then 1.6rem can be calculated to 16px. It makes it easier to be accessible and user friendly, as when a user adjusts their font size, the site will scale correctly to their needs.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+Preprocessing is CSS written in another language and then compiled to CSS. If you were to write your code in LESS, the javascript compiler would convert it to CSS. There are a few different preprocessors, 
+like SASS and Stylus. Preprocessing allows you to easily create
+variables, manage inheritance via nesting, use mixins, and other useful stuff.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+I really love the nesting feature. It's so much easier to write code without having to worry about inheritance like you would in CSS. I also like how you can import and clean up your code. Though I will admit, the compiler watcher is annoying. I hate how when it breaks, nothing changes. And sometimes you can get so frustrated when nesting improperly, it's often times difficult to get things right without experimenting. 
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
