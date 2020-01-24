@@ -162,10 +162,32 @@ p {
 }
 .spacenav {
   width: 100%;
-  border: solid green;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #E8E8E8;
+}
+.spacenav .navdiv {
+  margin-top: 1%;
+}
+.spacenav .navdiv h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 4.5rem;
+  margin-bottom: 4%;
+  color: #23293B;
+}
+.spacenav .navdiv ul li {
+  width: 400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 2rem;
+  margin-bottom: 3%;
+}
+.spacenav .navdiv ul li a {
+  text-decoration: none;
+  color: #23293B;
 }
 footer {
   color: #22283B;
