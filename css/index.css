@@ -167,6 +167,11 @@ p {
   align-items: center;
   background-color: #F6F6F6;
 }
+@media (max-width: 500px) {
+  .spacenav {
+    margin-right: 999%;
+  }
+}
 .spacenav .navdiv {
   margin-top: 1%;
 }
@@ -207,7 +212,7 @@ footer {
 }
 @media (max-width: 500px) {
   .home {
-    margin: 2%;
+    padding: 2%;
   }
 }
 .home .intro h2 {
@@ -216,6 +221,12 @@ footer {
 .home .intro img {
   margin: auto 0;
   border-radius: 5px;
+}
+@media (max-width: 500px) {
+  .home .intro img {
+    margin: auto;
+    widtH: 100%;
+  }
 }
 .home .intro p {
   padding: 0 15px;
